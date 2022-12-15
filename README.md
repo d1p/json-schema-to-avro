@@ -1,7 +1,3 @@
-# json-schema-to-avro
-
-# My Project
-
 This is a project that uses pipenv to manage dependencies.
 
 ## Installation
