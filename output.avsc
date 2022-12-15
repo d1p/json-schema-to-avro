@@ -1,0 +1,53 @@
+{
+    "type": "record",
+    "name": "Person",
+    "namespace": "https://example.com/person.schema.json",
+    "fields": [
+        {
+            "name": "firstName",
+            "type": "string",
+            "doc": "The person's first name."
+        },
+        {
+            "name": "lastName",
+            "type": [
+                "string",
+                "null"
+            ],
+            "doc": "The person's last name."
+        },
+        {
+            "name": "age",
+            "type": "long",
+            "doc": "Age in years which must be equal to or greater than zero."
+        },
+        {
+            "name": "fruits",
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        {
+            "name": "hobbies",
+            "type": "record",
+            "fields": [
+                {
+                    "name": "indoor",
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                {
+                    "name": "outdoor",
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            ],
+            "doc": "Hobbies of the employee"
+        }
+    ]
+}
